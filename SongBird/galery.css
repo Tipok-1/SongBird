@@ -1,0 +1,127 @@
+.header .content,
+.footer .content{
+    overflow: hidden;
+}
+
+.galery{
+    overflow-y: scroll;
+    align-self: flex-start;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 10;
+    grid-gap:10px;
+    width: 90%;
+    height:auto;
+    overflow-y: hidden;
+    margin:15px 0;
+    display:none;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: rgb(8, 15, 36);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #143861;
+    border:1px solid rgb(131, 127, 127);
+    border-radius: 10px;
+}
+.grid_element{
+    width:100%;
+    height:300px;
+    background-color: rgb(8, 15, 36);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+.grid_element:hover{
+    cursor: pointer;
+}
+.el_img{
+    border-radius: 10px;
+    width:90%;
+    height: 75%;
+    margin-top: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.el_name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:rgb(209, 209, 209);
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 24px;
+    width:90%;
+    height: 20%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.galery_popap{
+    width: 500px;
+    height: 500px;
+    position: fixed;
+    background-color: green;
+    display: none;
+    background-color: rgb(8, 15, 36);
+    outline: 3px solid rgb(71, 60, 38);
+    border-radius: 10px;
+    /*left:calc(50% - 250px);
+    //top:calc(50% - 250px);*/
+    margin: auto;
+    z-index: 20;
+    flex-direction: column;
+    align-items: center;
+}
+.galery_img{
+    width: 90%;
+    display: flex;
+    position: relative;
+    margin-top: 10px;
+    height: 40%;
+    z-index: -1;
+}
+.gl_img{
+    height: 100%;
+    width: 60%;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.galery_info,
+.gl_title{
+    font-size: 20px;
+    color:rgb(209, 209, 209);
+    font-family: 'Montserrat', sans-serif;
+}
+.gl_title{
+    height: 100%;
+    width: 40%;
+    text-align: center;
+}
+.galery_info{
+    width: 90%;
+    height: 55%;
+    margin: 10px 0;
+    overflow-y: auto;
+}
+.galery_info::-webkit-scrollbar{
+    width: 5px;
+}
+.black_back{
+    position: fixed;
+    background-color: rgba(8, 15, 36,.7);
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    display: none;
+    z-index: 2;
+}
+.black_back:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,199 @@
+@media only screen and (max-width: 1300px){
+    /*width:calc(367px + (465 - 367) * ((100vw - 1000px) / (1324 - 1000)));*/
+    .content{
+        width:calc(90% + (70 - 90) * ((100vw - 320px) / (1300 - 320)));
+    }
+    .logo{
+        font-size: calc(24px + (40 - 24) * ((100vw - 320px) / (1300 - 320)));
+    }
+    .nav{
+        font-size: calc(24px + (36 - 24) * ((100vw - 320px) / (1300 - 320)));
+    }
+    .all_sound{
+        height: calc(30px + (50 - 30) * ((100vw - 320px) / (1300 - 320)));
+        width:calc(30px + (50 - 30) * ((100vw - 320px) / (1300 - 320)));
+    }
+    .gif{
+        width: 40%;
+        font-size: calc(24px + (40 - 24) * ((100vw - 320px) / (1300 - 320)));
+    }
+    .result{
+        width:70%;
+    }
+}
+@media only screen and (max-width: 850px){
+    .content{
+        width:calc(100% + (70 - 100) * ((100vw - 320px) / (850 - 320)));
+    }
+    .githab,
+    .course
+    {
+        width: 150px;
+        text-align: center;
+    }
+    .year{
+        margin-left: 0;
+    }
+    .nav_punct{
+        flex-direction: column;
+        align-items: flex-end;
+        font-weight: bold;
+    }
+    .nav{
+        align-items: center;
+    }
+    /*main page*/
+    .score{
+        width:15%;
+        margin-right: 10px;
+        font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (850 - 320)));
+        text-align: center;
+    }
+    .all_question{
+        width: 80%
+    }
+    .question{
+        width: calc(40px + (158- 40) * ((100vw - 320px) / (850 - 320)));
+        height:10%;
+        transition: height ease-in .2s;
+    }
+    .active_question{
+        height:100%;
+        width:100px;
+        border-radius: 10px;
+    }
+    .result{
+        width:80%;
+    }
+}
+@media only screen and (max-width: 705px){
+    .gif{
+        background-size: contain;
+        width: 60%;
+    }
+    .nav,
+    .logo{
+        width: 20%;
+    }
+    /**/
+    .song_player{
+        flex-direction: column;
+        overflow: hidden;
+        position: relative;
+    }
+    .bird_img{
+        width: 200px;
+        height: calc(150px + (270 - 150) * ((100vw - 320px) / (705 - 320)));
+        margin-left:calc(0px + (100 - 0) * ((100vw - 320px) / (705 - 320)));
+        align-self: flex-start;
+    }
+    .bird_name{
+        left:70%;
+        font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (705 - 320)));
+        overflow: hidden;
+    }
+    /*player*/
+    .player{
+        height:40%;
+        width:85%;
+    }
+    .playTime,
+    .allTime{
+        bottom:15px;
+    }
+    .volume_range{
+        bottom: 50px;
+    }
+    .play_btn{
+        height:calc(37px + (51 - 37) * ((100vw - 320px) / (705 - 320)));
+    }
+    .allTime{
+        right:calc(45px + (60 - 45) * ((100vw - 320px) / (705 - 320)));
+    }
+    /**/
+    .game_field{
+        height:1100px;
+        width: 95%;
+        align-self: flex-start;
+    }
+    .answer{
+        flex-direction: column;
+        height:600px;
+    }
+    .variant_answer,
+    .answer_info{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .answer_info{
+        overflow-y: auto;
+    }
+    .variant_answer{
+        height:45%;
+    }
+    .variant_answer{
+        height: 55%;
+    }
+    .popap{
+        width:calc(300px + (500 - 300) * ((100vw - 320px) / (705 - 320)));
+    }
+    .popap p{
+        overflow-y:auto;
+    }
+    .close_popap{
+        width:calc(44px + (64 - 44) * ((100vw - 320px) / (705 - 320)));
+        height:calc(44px + (64 - 44) * ((100vw - 320px) / (705 - 320)));
+        left:calc(-13px + (-28 - -13) * ((100vw - 320px) / (705 - 320)));
+        top:calc(-13px + (-28 - -13) * ((100vw - 320px) / (705 - 320)));
+    }
+    .left,
+    .right{
+        height:calc(30px + (40 - 30) * ((100vw - 320px) / (705 - 320)));
+    }
+    /*GALERY*/
+    .galery{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 15;
+    }
+    .galery_popap{
+        width:calc(300px + (500 - 300) * ((100vw - 320px) / (705 - 320)));
+    }
+}
+@media only screen and (max-width: 500px){
+    .githab,
+    .course{
+        font-size: 16px;
+    }
+    .menu_btn{
+        font-size: 1.5em;
+    }
+    .menu_title{
+        font-size: 36px;
+    }
+    .all_question{
+        width: 60%
+    }
+    .result{
+        width:95%;
+    }
+    .song_player{
+        height:calc(250px + (420 - 250) * ((100vw - 320px) / (500 - 320)));
+    }
+    .volume_range{
+        bottom: calc(60px + (50 - 60) * ((100vw - 320px) / (500 - 320)));
+    }
+    /*GALERY*/
+    .galery{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 30;
+    }
+}
+@media only screen and (max-height: 925px){
+    .menu{
+        margin-bottom: 0;
+        align-self: flex-start;
+    }
+    .popap{
+        margin-top: 40px;
+    }
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="audio.css">
+    <link rel="stylesheet" href="galery.css">
+    <link rel="stylesheet" href="adaptive.css">
+
+    <script type="module" src="birds_info.js" ></script>
+    <script src = "audio.js" defer></script>
+    <script src = "question.js" defer></script>
+    <script type="module" src="galery.js" ></script>
+    <script type="module" src = "script.js" defer></script>
+    <title>SongBird</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class ="header">
+            <div class="content">
+                <div class="logo">
+                    <span>Song</span>Bird
+                </div>
+                <div class="gif"></div>
+                <nav class = "nav">
+                    <div class = "nav_punct">
+                        <a href="" class="active_link nav_link go_menu">Меню</a>
+                        <a href="" class="nav_link start">Старт</a>
+                    </div>
+                    <div class="all_sound vol"></div>
+                </nav>
+            </div>
+        </header>
+        <main class = "main">
+            <div class="content">
+                <div class="menu">
+                    <h2 class = "menu_title">bird quiz</h2>
+                    <input type="button" value = "Старт" class = "menu_btn btn start">
+                    <input type="button" value = "Галерея" class= "menu_btn btn to_galery">
+                    <input type="button" value = "Помощь" class= "menu_btn btn help">
+                    <div class="popap">
+                        <div class="close_popap">
+                            <div class="left"></div>
+                            <div class="right"></div>
+                        </div>
+                        <h3>Правила</h3>
+                        <p class="popap_info">
+                            Пройдите эту увлекательную викторину и определите свой уровень знания голосов птиц.
+                            В начале игры количество баллов 0.
+                            Если игрок дал правильный ответ с первой попытки, 
+                            его счёт увеличивается на 5 баллов, каждая следующая попытка даёт на один
+                            балл меньше, если правильный ответ дан только с последней, шестой попытки,
+                            игрок получает за него 0 баллов
+                        </p>
+                    </div>
+                </div>
+                <div class="game_field">
+                    <div class="score_question">
+                        <div class="score">Score 0</div>
+                        <div class="all_question">
+                            <div class="active_question question">Лесные птицы</div>
+                            <div class="question">Морские птицы</div>
+                            <div class="question">Хищные птицы</div>
+                            <div class="question">Болотные птицы</div>
+                            <div class="question">Певчие птицы</div>
+                        </div>
+                    </div>
+                    <div class="song_player">
+                        <div class="bird_img"></div>
+                        <div class="bird_name">***********</div>
+                        <div class="player">
+                            <audio class = "audio" controls><source src="assets\sound\forest\berkut.mp3" type="audio/mp3">
+                                Your browser does not support the audio element.
+                                </audio>
+                                <div class="play_btn">►</div>
+                                <input class="cur_time" type="range" min="0" max="10" step="0">
+                                <div class="playTime">1:00</div>
+                                <div class="allTime">1:00</div>
+                                <div class="volume_range">
+                                    <input class="volume" type="range" min="0" max="10">
+                                    <div class="speaker"></div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="answer">
+                        <div class = "variant_answer">
+                            <div class="variant">Беркут</div>
+                            <div class="variant">Дятел</div>
+                            <div class="variant">Снегирь</div>
+                            <div class="variant">Зеленушка</div>
+                            <div class="variant">Зяблик</div>
+                            <div class="variant"></div>
+                        </div>
+                        <div class = "answer_info">
+                            <p class = "first_info">Выберите вариант из предложенных</p>
+                            <div class="bird">
+                                <div class="name_img">
+                                    <div class="bird_img_info"></div>
+                                    <div class="player_title">
+                                        <h3 class="bird_title">Зеленушка
+                                            <hr>
+                                        </h3>
+                                        <div class="player_2">
+                                            <audio class = "audio_2" controls><source src="assets\sound\forest\berkut.mp3" type="audio/mp3">
+                                                Your browser does not support the audio element.
+                                                </audio>
+                                                <div class="play_btn_2">►</div>
+                                                <input class="cur_time_2" type="range" min="0" max="10" step="0">
+                                                <div class="playTime_2">1:00</div>
+                                                <div class="allTime_2">1:00</div>
+                                                <div class="volume_range_2">
+                                                    <input class="volume_2" type="range" min="0" max="10">
+                                                    <div class="speaker_2"></div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bird_info">
+                                    Lorem ipsum dolor sit amet consectetur 
+                                    adipisicing elit. Possimus libero, suscipit recusandae
+                                    itaque cumque est unde beatae laudantium vel corrupti,
+                                    iste facere dolores ut, tempora rem doloribus ipsam veniam? Hic!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="next">Следующий</div>
+                </div>
+                <div class="result">
+                    <h3>Результат</h3>
+                    <h3 class = 'result_info'>Ваш счёт 50</h3>
+                    <div class="button_restart"></div>
+                </div>
+                <div class="galery"></div>
+            </div>
+        </main>
+        <div class="galery_popap">
+            <div class="close_popap close_popap_galery">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+            <div class="galery_img">
+                <div class="gl_img"></div>
+                <div class="gl_title"></div>
+            </div>
+            <div class="galery_info"></div>
+        </div>
+        <div class="black_back"></div>
+        <footer class = "footer">
+            <div class="content_footer content">
+                <div class="githab">
+                    <a href="https://github.com/Tipok-1">Design by «Tipok-1»</a>
+                    <h4></h4>
+                </div>
+                <p class="year">2022</p>
+                <div class="course"><a href ="https://rs.school/js/">©RSSchool & ©Yem Digital 2021</a></div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
